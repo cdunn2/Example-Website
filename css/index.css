@@ -1,0 +1,91 @@
+/* CSS for the Home page
+ * author: Connor Dunn
+ */
+
+ body {
+    margin: 0 auto;
+    background-color: rgb(144, 185, 247);
+ }
+
+ h1 {
+   display: inline-block;
+   margin-left: 3vw;
+   font-size: 2em;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ .top {
+    width: 100%;
+    padding: .5vw;
+    background-color: rgb(0, 3, 192);
+    color: white;
+ }
+
+ #links {
+   display: none;
+ }
+
+ #logo {
+   display: inline-block;
+   margin-left: 5vw;
+ }
+
+ #logo img {
+   width: 5%;
+   height: auto;
+ }
+
+ figure img {
+   height: auto;
+   width: 100%
+ }
+
+ figure {
+   position: relative;
+   text-align: center;
+   
+ }
+ figcaption {
+   position: absolute;
+   width: 100%;
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+
+ @media screen and (min-width: 700px) {
+
+   #links {
+      display: inline-block;
+      margin-left: 1vw;
+      max-width: 90%;
+      background-color: rgb(208, 237, 253);
+      padding: 1vw;
+      
+   }
+
+   #logo {
+      display: none;
+   }
+
+   #links a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      
+   }
+
+   #links a:not(:first-child) {
+      margin-left: 8vw;
+   }
+
+   figcaption {
+      width: 50%;
+      margin-left: 22vw;
+      bottom: 5vw;
+      padding: 1vw;
+   }
+
+ }
