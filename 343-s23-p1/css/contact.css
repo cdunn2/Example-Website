@@ -1,0 +1,46 @@
+/* CSS for the contact page
+ * author: Connor Dunn
+ */
+
+ h2 {
+    margin-top: 3vw;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+.box {
+    margin-top: 8vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    gap: 2vh;
+}
+
+.box div {
+    background-color: white;
+    border-style: solid;
+    width: 80vw;
+    padding: 4vw;
+}
+
+.box div:not(:first-child) {
+    text-align: center;
+}
+
+@media screen  and (min-width: 600px) {
+    .box {
+        margin-top: 10vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #form {
+        padding: 2vw;
+    }
+    
+}
